@@ -18,10 +18,10 @@
     </h2>
 
     <div class="plans">
-      <plan-item></plan-item>
-      <plan-item></plan-item>
-      <plan-item></plan-item>
-      <plan-item></plan-item>
+      <plan-item name = "El soltero" ></plan-item>
+      <plan-item name = "El adicto" ></plan-item>
+      <plan-item name = "El viajero" ></plan-item>
+      <plan-item ></plan-item>
     </div>
   </div>
 </template>
