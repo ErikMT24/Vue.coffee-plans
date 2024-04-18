@@ -1,10 +1,5 @@
 <script setup>
-import {ref} from 'vue';
- import planItem from './components/icons/plan-item.vue';
- const plans = ref(["El soltero",
-  "El adicto",
-   "El viajero",
-    "El colombiano"]);
+import planPicker from './components/icons/plan-picker.vue';
 </script>
 
 <template>
@@ -22,11 +17,8 @@ import {ref} from 'vue';
       Viajamos por el mundo para encontrar el mejor café de origen único para ti
     </h2>
 
-    <div class="plans">
-      <plan-item v-for="plan in plans" :name="plan" 
-      v-bind:key="plan">
-      </plan-item>
-    </div>
+    <plan-picker></plan-picker>
+    
   </div>
 </template>
 
