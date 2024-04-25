@@ -1,24 +1,30 @@
 
 <template>
-   <div class="plan">
-        <div class="description">
-          <span class="title">
-            {{ name }} 
-         </span>
-     </div>
+  <div @click="select" :class="{'selected-plan':selected}" class="plan">
+       <div class="description">
+         <span class="title">
+           {{ name }} {{ selected ? "🐶" : "" }}
+        </span>
     </div>
+   </div>
 </template>
 <script setup>
- defineProps ({
-  name: {
-    type: String,
-    required: true
-  }, 
- });
+import { ref } from 'vue';
+
+const selected = ref(false);
+const select = () => {
+selected.value = true
+}
+defineProps ({
+ name: {
+   type: String,
+   required: true
+ }, 
+});
 </script>
 
-
-
-<style lang="scss" scoped>
-
+<style scoped>
+    .selected-plan {
+      background-color:rgb(248, 116, 182);
+    }
 </style>

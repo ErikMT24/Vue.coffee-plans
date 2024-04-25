@@ -17,8 +17,8 @@ import planPicker from './components/icons/plan-picker.vue';
       Viajamos por el mundo para encontrar el mejor café de origen único para ti
     </h2>
 
-    <plan-picker></plan-picker>
-    
+    <plan-picker/>
+
   </div>
 </template>
 
