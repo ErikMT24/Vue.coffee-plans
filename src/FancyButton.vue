@@ -1,5 +1,4 @@
 <script setup>
-import FancyButton from './FancyButton.vue';
 </script>
 
 <template>
@@ -9,9 +8,17 @@ import FancyButton from './FancyButton.vue';
   </header>
 
   <div class="content">
-    <FancyButton></FancyButton>
+    <button>Haz click✈🛩</button>
   </div>
 </template>
 
 <style scoped>
+.content{
+  text-align: center;
+}
+button{
+  width: 10rem;
+  margin: 30px auto;
+  font-size: 2rem;
+}
 </style>
