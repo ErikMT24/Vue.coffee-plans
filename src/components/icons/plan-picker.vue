@@ -1,6 +1,5 @@
 <template>
     <div ref="plansWrapper" 
-    style="border: red double 10px;" 
     class="plans">
           <plan-picker-item
            @select="printSelected"
